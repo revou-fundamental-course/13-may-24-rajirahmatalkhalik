@@ -1,0 +1,93 @@
+/* Ini style css */
+body{
+    font: 16px arial, sans-serif;
+    background-color: rgb(216, 216, 216);
+}
+.container {
+    margin: 4vw;
+    padding: 2vw;
+    background-color: white;
+}
+body section header {
+    text-align: center;
+}
+body header h1 {
+    font-size: 32px;
+    color: rgb(36, 89, 83);
+    font-weight: bold;
+}
+body header h1 span {
+    font-weight: lighter; 
+    font-size: 24px;
+}
+body header p {
+    margin: 16px auto;
+}
+body header nav {
+    margin-top: 20px;
+}
+body header nav button {
+    width: 90%;
+    margin: 2px auto;
+    padding: 12px;
+    color: #fff;
+    background-color: rgb(64, 142, 145);
+    border: none;
+    border-radius: 4px;
+}
+body main {
+    width: 95%;
+    margin: 20px auto;
+    border: 2px solid rgb(64, 142, 145);
+    background-color: rgb(255, 255, 255);
+}
+main h2 {
+    padding: 12px;
+    background-color: rgb(64, 142, 145);
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+.formula {
+    padding: 12px;
+}
+figure {
+    text-align: center;
+}
+figure img {
+    width: 24vw;
+    margin: 24px auto;
+}
+.calculate {
+    padding: 12px;
+    text-align: center;
+}
+.calculate h3 {
+    text-align: center;
+}
+.container-input {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container-input input {
+    width: 29vw;
+    padding: 8px;
+    margin: 8px;
+}
+.btn-hitung {
+    margin: 12px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(64, 142, 145);
+    color: white;
+}
+.btn-reset {
+    margin: 8px 12px;
+    text-align: left;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(228, 147, 147);
+    color: white;
+}
