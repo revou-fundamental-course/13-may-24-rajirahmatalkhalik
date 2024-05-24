@@ -4,111 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kalkulator Matematik</title>
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
+    <header>
+        <section class="bar-header">
+            <h1>Kalkulator Matematik</h1>
+        </section>
+
+        <section class="blank">Kalkulator Matematik</section>
+    </header>
+
     <section class="container">
         <header>
-            <h1>
-                Welcome to Kalkulator Matematik<br>
-                <span>by Raji Rahmatal Khalik</span>
-            </h1>
+            <h1>Welcome To Katik</h1>
 
-            <p>
-                Hei Sobat, Selamat datang di Katik :]<br>
-                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.
-            </p>
-            <p>Untuk saat ini hanya tersedia bangun datar Segitiga saja.</p>
+            <p>Hei Sobat, selamat datang di Katik!<br>Web apps sederhana yang dirancang khusus untuk membantu menghitung
+                luas dan keliling bangun datar dengan mudah dan cepat.</p>
+            <p>Saat ini, Katik mendukung perhitungan untuk segitiga, dan akan segera menambahkan bangun datar
+                lainnya.<br>Dengan antarmuka yang ramah pengguna, Katik bertujuan menjadi alat praktis dan bermanfaat
+                bagi siapa saja yang membutuhkan solusi cepat untuk perhitungan geometris sehari-hari.</p>
 
-            <nav>
-                <button>Luas Segitiga</button>
-                <button>Keliling Segitiga</button>
+            <nav><button id="btnLuas">Luas Segitiga</button>
+                <button id="btnKeliling">Keliling Segitiga</button>
             </nav>
         </header>
 
-        <!-- Luas Segitiga -->
-        <main>
+        <!-- Konten Luas Segitiga -->
+        <main id="luasSegitiga">
             <h2>Luas Segitiga</h2>
 
-            <section class="formula">
-                <figure>
-                    <img src="assets/segitiga.png" alt="Gambar Segitiga">
-                </figure>
+            <section class="main-content">
+                <section class="content-formula">
+                    <figure>
+                        <img src="assets/segitiga.png" alt="Gambar Segitiga">
+                    </figure>
 
-                <p>Rumus Luas Segitiga yaitu:</br>
-                <p style="text-align: center;">
-                    <b>L = 1/2 x a x t</b>
-                </p>
-                Di mana : </br>
-                L = Luas </br>
-                a = Panjang Alas </br>
-                t = Tinggi </br>
-                </p>
-            </section>
+                    <p>Rumus Luas Segitiga yaitu:
+                    <p class="formula">L = 1/2 &times; a &times; t</p>
+                    Di mana : </br>
+                    L = Luas </br>
+                    a = Panjang Alas </br>
+                    t = Tinggi </br>
+                    </p>
+                </section>
 
-            <hr>
+                <hr>
 
-            <section class="calculate">
-                <h3>Hitung Luas Segitiga</h3>
+                <section class="content-calculate">
+                    <h3>Hitung Luas Segitiga</h3>
 
-                <div class="container-input">
-                    <input type="number" placeholder="Nilai Alas">
-                    <input type="number" placeholder="Nilai Tinggi">
-                </div>
+                    <div class="container-input-luas">
+                        <input type="number" id="nilaiAlas" placeholder="Nilai Alas">
+                        <input type="number" id="nilaiTinggi" placeholder="Nilai Tinggi">
+                    </div>
 
-                <p>abcdefghijklmnopqrstuvw</p>
-                <p>xyz</p>
+                    <div class="container-output">
+                        <table>
+                            <tr>
+                                <th id="L">L =</th>
+                                <th id="formulaLuas">1/2 &times; a &times; t</th>
+                                <td id="equalsL">=</td>
+                                <td id="inputNilaiL">1/2 &times; 2000 &times; 5000</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="2"></th>
+                                <td id="equalsL">=</td>
+                                <td id="calculateNilaiL">1000 &times; 5000</td>
+                            </tr>
+                            <tr>
+                                <td id="equalsL">=</td>
+                                <td id="outputHasilL">5000000</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <input type="submit" class="btn-hitung" value="Hitung">
-                <p style="text-align: right;">
-                    <input type="reset" class="btn-reset" value="Reset">
-                </p>
+                    <input type="button" id="hitungLuas" value="Hitung">
+                    <p style="text-align: right;">
+                        <input type="reset" id="resetLuas" value="Reset">
+                    </p>
+                </section>
             </section>
         </main>
 
-        <!-- Keliling Segitiga -->
-        <main>
+        <!-- Konten Keliling Segitiga -->
+        <main id="kelilingSegitiga">
             <h2>Keliling Segitiga</h2>
 
-            <section class="formula">
-                <figure>
-                    <img src="assets/segitiga.png" alt="Gambar Segitiga">
-                </figure>
+            <section class="main-content">
+                <section class="content-formula">
+                    <figure>
+                        <img src="assets/segitiga.png" alt="Gambar Segitiga">
+                    </figure>
 
-                <p>Rumus Keliling Segitiga yaitu:</br>
-                <p style="text-align: center;">
-                    <b>K = S1 + S2 + S3</b>
-                </p>
-                Di mana : </br>
-                K = Keliling </br>
-                S1 = Sisi A </br>
-                S2 = Sisi B </br>
-                S3 = Sisi C </br>
-                </p>
-            </section>
+                    <p>Rumus Keliling Segitiga yaitu:
+                    <p class="formula">K = S1 + S2 + S3</p>
+                    Di mana : </br>
+                    K = Keliling </br>
+                    S1 = Sisi A </br>
+                    S2 = Sisi B </br>
+                    S3 = Sisi C </br>
+                    </p>
+                </section>
 
-            <hr>
+                <hr>
 
-            <section class="calculate">
-                <h3>Hitung Keliling Segitiga</h3>
+                <section class="content-calculate">
+                    <h3>Hitung Keliling Segitiga</h3>
 
-                <div class="container-input">
-                    <input type="number" placeholder="Nilai Sisi A">
-                    <input type="number" placeholder="Nilai Sisi B">
-                </div>
-                <div class="container-input" style="margin: 1.5vw 0;">
-                    <input type="number" placeholder="Nilai Sisi C">
-                </div>
+                    <div class="container-input-kAB">
+                        <input type="number" id="nilaiSisiA" placeholder="Nilai Sisi A">
+                        <input type="number" id="nilaiSisiB" placeholder="Nilai Sisi B">
+                    </div>
+                    <div class="container-input-kC">
+                        <input type="number" id="nilaiSisiC" placeholder="Nilai Sisi C">
+                    </div>
 
-                <p>abcdefghijklmnopqrstuvw</p>
-                <p>xyz</p>
+                    <div class="container-output">
+                        <table>
+                            <tr>
+                                <th id="K">K =</th>
+                                <th id="formulaKeliling">S1 + S2 + S3</th>
+                                <td id="equalsK">=</td>
+                                <td id="inputNilaiK">1000 + 2000 + 3000</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="2"></th>
+                                <td id="equalsK">=</td>
+                                <td id="calculateNilaiK">3000 + 3000</td>
+                            </tr>
+                            <tr>
+                                <td id="equalsK">=</td>
+                                <td id="outputHasilK">6000</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <input type="submit" class="btn-hitung" value="Hitung">
-                <p style="text-align: right;">
-                    <input type="reset" class="btn-reset" value="Reset">
-                </p>
+                    <input type="button" id="hitungKeliling" value="Hitung">
+                    <p style="text-align: right;">
+                        <input type="reset" id="resetKeliling" value="Reset">
+                    </p>
+                </section>
             </section>
         </main>
 
